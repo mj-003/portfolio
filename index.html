@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Malwina Juchiewicz - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="#home">MJ<span>.</span></a>
+          </div>
+          <ul class="nav-links">
+            <li>
+              <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+            </li>
+            <li>
+              <a href="#projects"><i class="fas fa-briefcase"></i> Projects</a>
+            </li>
+            <li>
+              <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </li>
+          </ul>
+          <button id="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home / Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-container">
+            <div class="hero-content fade-in">
+              <h1>Hi, I'm <span>Malwina</span></h1>
+              <p class="subtitle">Applied Computer Science Student</p>
+              <p class="about-me">
+                I'm an Applied Computer Science student with a passion for learning new technologies and solving problems through code.
+                I enjoy taking on challenges, which has led to high academic achievements.
+                Outside of programming, I love climbing and crocheting, both of which help me stay creative and persistent.
+              </p>
+              <div class="btn-group">
+                <a href="#projects" class="btn btn-primary">
+                  <i class="fas fa-briefcase"></i> View My Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <i class="fas fa-envelope"></i> Get in Touch
+                </a>
+              </div>
+            </div>
+            <div class="hero-image fade-in">
+              <img
+                src="images/profile.png"
+                alt="Malwina Juchiewicz"
+                class="profile-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills light">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">
+              Technologies and tools I work with on a daily basis.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card fade-in">
+              <div class="skill-icon">
+                <i class="fas fa-code" style="color: var(--primary)"></i>
+              </div>
+              <h3>Programming Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C++</span>
+              </div>
+            </div>
+
+            <div class="skill-card fade-in">
+              <div class="skill-icon">
+                <i class="fas fa-database" style="color: var(--primary)"></i>
+              </div>
+              <h3>Databases</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Oracle</span>
+              </div>
+            </div>
+
+            <div class="skill-card fade-in">
+              <div class="skill-icon">
+                <i class="fas fa-laptop-code" style="color: var(--primary)"></i>
+              </div>
+              <h3>Web Development</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">Node.js</span>
+              </div>
+            </div>
+
+            <div class="skill-card fade-in">
+              <div class="skill-icon">
+                <i class="fas fa-tools" style="color: var(--primary)"></i>
+              </div>
+              <h3>Tools</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Raspberry Pi</span>
+              </div>
+            </div>
+            
+            <div class="skill-card fade-in">
+              <div class="skill-icon">
+                <i class="fas fa-language" style="color: var(--primary)"></i>
+              </div>
+              <h3>Languages</h3>
+              <div class="language-items">
+                <div class="language-item">
+                  <div class="language-name">Polish <span class="language-level">Native</span></div>
+                  <div class="language-bar">
+                    <div class="language-progress" style="width: 100%"></div>
+                  </div>
+                </div>
+                
+                <div class="language-item">
+                  <div class="language-name">English <span class="language-level">C1 Advanced</span></div>
+                  <div class="language-bar">
+                    <div class="language-progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">
+              Selected projects I've worked on. Each one showcases my skills and interests.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card fade-in">
+              <div class="project-info">
+                <h3>Drug Use Prediction Model</h3>
+                <p>
+                  Developed a predictive model to assess drug use risk based on demographic and health data.
+                  Used Logistic Regression and SVM, optimizing with cross-validation and hyperparameter tuning.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Data Science</span>
+                  <span class="project-tag">Machine Learning</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/mj-003/drug-use-prediction-model" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card fade-in">
+              <div class="project-info">
+                <h3>Graph Analyzer</h3>
+                <p>
+                  Developed a Java-based graph analysis tool with an interactive GUI for generating and analyzing graphs.
+                  Implemented Dijkstra's algorithm, cycle detection, and graph comparison with dynamic visualization.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Java</span>
+                  <span class="project-tag">Java Swing</span>
+                  <span class="project-tag">Algorithms</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/mj-003/graph-analyzer" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card fade-in">
+              <div class="project-info">
+                <h3>Genetic Algorithm for Route Optimization</h3>
+                <p>
+                  Developed a Genetic Algorithm for route optimization in a sparse network, 
+                  using mutation, crossover, and fitness evaluation. Created for a university competition, 
+                  applying concepts from the Effective Programming Techniques course.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">C++</span>
+                  <span class="project-tag">Genetic Algorithms</span>
+                  <span class="project-tag">Optimization</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/mj-003/AGChallenge" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card fade-in">
+              <div class="project-info">
+                <h3>Parking Management System</h3>
+                <p>
+                  An intelligent parking system based on Raspberry Pi with a web-based control panel.
+                  The system manages parking spaces, tracks availability, and provides a user-friendly interface.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Flask</span>
+                  <span class="project-tag">MySQL</span>
+                  <span class="project-tag">Raspberry Pi</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/mj-003/iot-parking-system" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card fade-in">
+              <div class="project-info">
+                <h3>Expense Tracker</h3>
+                <p>
+                  Developed an app for managing personal finances, allowing users to track 
+                  expenses, income, and scheduled payments with an intuitive interface.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">SQLite</span>
+                  <span class="project-tag">CustomTkinter</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/mj-003/expense-tracker" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section light">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+              Feel free to reach out to me for collaborations or just to say hi!
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Email</h3>
+              <p><a href="mailto:juchiewicz.malwina@gmail.com">juchiewicz.malwina@gmail.com</a></p>
+            </div>
+
+            <div class="contact-card fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h3>Phone</h3>
+              <p><a href="tel:+48731958652">+48 731 958 652</a></p>
+            </div>
+
+            <div class="contact-card fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Location</h3>
+              <p>Wrocław, Poland</p>
+            </div>
+            
+            <div class="contact-card fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>Education</h3>
+              <p>Wrocław University of Science and Technology</p>
+            </div>
+          </div>
+
+          <div class="social-section fade-in">
+            <h3>Find Me Online</h3>
+            <div class="social-links">
+              <a href="https://github.com/mj-003" class="social-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/malwina-juchiewicz-b56bb8354/" class="social-link" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">MJ<span>.</span></div>
+          <p class="footer-copyright">
+            &copy; 2025 Malwina Juchiewicz. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/router.js"></script>
+  </body>
+</html>
