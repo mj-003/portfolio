@@ -127,3 +127,37 @@ function updateActiveLink(sectionId) {
     activeLink.classList.add("active");
   }
 }
+
+// Mobile Menu Toggle
+const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const overlay = document.querySelector(".overlay");
+const navItems = document.querySelectorAll(".nav-links a");
+
+// Toggle menu function
+function toggleMenu() {
+  mobileMenuToggle.classList.toggle("active");
+  navLinks.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.classList.toggle("no-scroll");
+}
+
+// Event listeners
+mobileMenuToggle.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
+
+// Close menu when a nav item is clicked
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (navLinks.classList.contains("active")) {
+      toggleMenu();
+    }
+  });
+});
+
+// Close menu when screen is resized to desktop size
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768 && navLinks.classList.contains("active")) {
+    toggleMenu();
+  }
+});
