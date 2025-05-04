@@ -29,10 +29,16 @@ function setupThemeToggle() {
   const themeToggle = document.getElementById("theme-toggle");
   const themeIcon = themeToggle.querySelector("i");
 
+  // Modified condition to make dark mode the default
   const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
+  if (savedTheme === "dark" || savedTheme === null) {
     document.body.classList.add("dark-mode");
     themeIcon.classList.replace("fa-moon", "fa-sun");
+
+    // Save the theme as dark if it wasn't saved before
+    if (savedTheme === null) {
+      localStorage.setItem("theme", "dark");
+    }
   }
 
   themeToggle.addEventListener("click", () => {

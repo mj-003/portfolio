@@ -1013,7 +1013,7 @@ body.no-scroll {
   position: relative;
 }
 
-.project-image::after {
+/* .project-image::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1026,4 +1026,57 @@ body.no-scroll {
 
 .project-card.dark-image .project-image::after {
   background-color: rgba(255, 255, 255, 0.2);
+} */
+
+/* For light mode */
+.project-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.15); /* Lighter overlay for light mode */
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+/* For dark mode */
+.dark-mode .project-image::after {
+  background-color: rgba(0, 0, 0, 0.4); /* Darker overlay for dark mode */
+}
+
+.demo-link {
+  background-color: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+}
+
+.demo-link:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.combined-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--border-radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+  background-color: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+  transition: var(--transition);
+}
+
+.combined-link:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.link-divider {
+  margin: 0 0.3rem;
+  opacity: 0.7;
 }
